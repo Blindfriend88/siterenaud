@@ -1,4 +1,5 @@
 let mainTitle=document.getElementById("MainTitle")
+let footer=document.getElementById("footer")
 // Élément 1 = Fonction Flag (utile pour écrans publicitaires par exemple):
 // function Ads(_flag)
 // {
@@ -32,7 +33,7 @@ let mainTitle=document.getElementById("MainTitle")
 //  }, 10000);
 
 // Exercice: Mix des deux éléments + passage d'une couleur à l'autre:
-mainTitle.innerHTML="Renaud"
+mainTitle.innerHTML="Renaud, le Renaudant!"
 let userInput=parseInt(prompt("Tapez 1 si vous êtes un homme, ou 2 si vous êtes une femme."))
 if(userInput==1)
 {
@@ -48,12 +49,15 @@ else
 }
 setTimeout(() =>
 {
-    mainTitle.innerHTML="Renaud"
+    mainTitle.innerHTML="Renaud, le Renaudant!"
  }, 10000);
+ let userName=prompt("Quel est votre prénom?")
+ footer.innerHTML="Au revoir "+userName+"."
+
  let MyButton=document.getElementById("MonBouton")
  MyButton.addEventListener("click",function()
  {
-    alert("Hello World!")
+    alert("Merci de votre visite!")
  }
  )
  MyButton.addEventListener("mouseover",function(){alert("Bonnes vacances!")})
