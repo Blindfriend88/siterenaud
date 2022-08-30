@@ -20,11 +20,24 @@ setTimeout(() =>
  }, 10000);
  let userName=prompt("Quel est votre prénom?")
  footer.innerHTML="Au revoir "+userName+"."
+ let body=document.getElementById("Body")
 
- let MyButton=document.getElementById("MonBouton")
- MyButton.addEventListener("click",function()
- {
-    alert("Merci de votre visite!")
- }
- )
- MyButton.addEventListener("mouseover",function(){alert("Mais qui est le nol qui a demandé une alerte pour le passage de la souris, sachant que les aveugles n'en ont rien à b...attre? lol")})
+function ChangeColor()
+{
+    if (body.style.background!="black")
+    {
+        body.style.background="black"
+        body.style.color="white"
+    }
+    else 
+    {
+        body.style.background="white"
+        body.style.color="black"
+    }
+}
+
+    document.getElementById("myButton").addEventListener("click", ChangeColor)
+ myButton.addEventListener("mouseover",function()
+  {
+    alert("Mais qui est le guignol qui a demandé une alerte pour le passage de la souris, sachant que les aveugles n'en ont rien à b...attre? lol")
+});
