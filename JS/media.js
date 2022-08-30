@@ -43,3 +43,8 @@ setTimeout(() =>
 }
 document.getElementById("familypicture").addEventListener("click",function(){document.getElementById("test").play()})
 // Comment se fait-il que ce script me dévore mon second h3?
+let maintenant=newDate();
+let jour=maintenant.getDate();
+let mois=maintenant.getMonth()+1;
+let an=maintenant.getFullYear();
+document.write("Nous sommes le ",jour,"/",mois,"/",an,".");

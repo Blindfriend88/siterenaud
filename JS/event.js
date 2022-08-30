@@ -41,3 +41,8 @@ setTimeout(() =>
   {
     alert("Mais qui est le guignol qui a demandé une alerte pour le passage de la souris, sachant que les aveugles n'en ont rien à b...attre? lol")
 }
+let maintenant=newDate();
+let jour=maintenant.getDate();
+let mois=maintenant.getMonth()+1;
+let an=maintenant.getFullYear();
+document.write("Nous sommes le ",jour,"/",mois,"/",an,".");
